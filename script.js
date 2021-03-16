@@ -59,13 +59,15 @@ function generatePassword() {
   }else{
     console.log(`No special characters then`);
   }
-
-
-//________________________________________________
+  
+  
+  //________________________________________________
   // var test = pwLength
   // return test;
   if (pwLower == false && pwUpper == false && pwNum == false && pwSpecial == false) {
     console.log(`Must contain at least one character option`);
+    var noChoices = document.querySelector(".nochoices").innerHTML = `
+    You must select at least one character option.`;
   }
 
 
