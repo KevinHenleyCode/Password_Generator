@@ -40,8 +40,43 @@ function generatePassword() {
   }else{
     console.log(`No special characters then`);
   }
-  var test = pwLength
-  return test;
+  // var test = pwLength
+  // return test;
+  if (pwLower == false && pwUpper == false && pwNum == false && pwSpecial == false) {
+    console.log(`Must contain at least one character option`);
+  }
+
+  var pw = [];
+  for (var iterate = 0; iterate < pwLength;) {
+    
+    if (pwUpper == true && iterate < pwLength) {
+      pw.push(`pwUpper ${iterate} `)
+      iterate ++
+    }
+
+    if (pwLower == true && iterate < pwLength) {
+      pw.push(`pwLower ${iterate} `)
+      iterate++
+    }
+
+    if (pwNum == true && iterate < pwLength) {
+      pw.push(`pwNum ${iterate} `)
+      iterate++
+    }
+
+    if (pwSpecial == true && iterate < pwLength) {
+      pw.push(`pwSpecial ${iterate} `)
+      iterate++
+    }
+    
+    
+    
+    
+  }
+  
+  var pwText = pw.toString();
+  console.log(`This is only a test ${pwText}`);
+
 }
 
 function writePassword() {
