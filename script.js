@@ -5,6 +5,7 @@ var generateBtn = document.querySelector("#generate");
 function generatePassword() {
   
   
+  
   //________________________________________________
   var pwLength = prompt(`How long would you like your password to be?
     (It must be between 8 and 128 characters long.)`);
@@ -26,9 +27,11 @@ function generatePassword() {
     console.log(`Ok so we'll add uppercase`);
     var text_2 = document.querySelector(".text2").innerHTML = `
       Uppercase`;
-    
+      
   }else{
     console.log(`No uppercases then`);
+    var text_2 = document.querySelector(".text2").innerHTML = `
+      No Uppercase`;
   }
   
   var pwLower = confirm(`would you like lowercase characters?`)
@@ -39,6 +42,8 @@ function generatePassword() {
     
   }else{
     console.log(`No lowercases then`);
+    var text_3 = document.querySelector(".text3").innerHTML = `
+      No Lowercase`;
   }
   
   var pwNum = confirm(`would you like numbers?`)
@@ -46,9 +51,11 @@ function generatePassword() {
     console.log(`Ok so we'll add numbers`);
     var text_4 = document.querySelector(".text4").innerHTML = `
       Numbers`;
-    
+      
   }else{
     console.log(`No numbers then`);
+    var text_4 = document.querySelector(".text4").innerHTML = `
+      No Numbers`;
   }
   
   var pwSpecial = confirm(`would you like special characters?`)
@@ -56,9 +63,11 @@ function generatePassword() {
     console.log(`Ok so we'll add special characters`);
     var text_5 = document.querySelector(".text5").innerHTML = `
       Special Characters`;
-    
+      
   }else{
     console.log(`No special characters then`);
+    var text_5 = document.querySelector(".text5").innerHTML = `
+      No Special Characters`;
   }
   
   
