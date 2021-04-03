@@ -22,4 +22,4 @@
 <br>
 
 ## Link
-[Website](https://kevinhenleycode.github.io/homework_week_3/)
+[Website](https://kevinhenleycode.github.io/Password_Generator/)
