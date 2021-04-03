@@ -1,4 +1,4 @@
-# homework_week_3
+# Password_Generator
 
 ## Objective
 * The point of this project was to get more familiar with JavaScript by creating a password generator
